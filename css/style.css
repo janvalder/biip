@@ -1,0 +1,46 @@
+/* CSS Document */
+
+html {}
+body {
+	font-family: Roboto, sans-serif; background: #eee; color: #333; overflow-x: hidden; overflow-y: scroll;
+}
+hr {border-bottom: 1px dashed rgba(0,0,0,0.3); margin: 0 0 4px 0;}
+
+
+.row {margin: 0 -2px;}
+div[class*=col-] {padding: 0 2px;}
+.container-fluid {
+	margin: 0; padding: 0;
+	background: url(../img/dot.png) repeat-y scroll 8.333% top,
+	url(../img/dot.png) repeat-y fixed 16.667% top,
+	url(../img/dot.png) repeat-y fixed 25.000% top,
+	url(../img/dot.png) repeat-y fixed 33.333% top,
+	url(../img/dot.png) repeat-y fixed 41.667% top,
+	url(../img/dot.png) repeat-y fixed 50.000% top,
+	url(../img/dot.png) repeat-y fixed 58.333% top,
+	url(../img/dot.png) repeat-y fixed 66.667% top,
+	url(../img/dot.png) repeat-y fixed 75.000% top,
+	url(../img/dot.png) repeat-y fixed 83.333% top,
+	url(../img/dot.png) repeat-y fixed 91.667% top;
+}
+
+.b-title {margin: 0 0 15px 0; background: #ed1c24; color: #fff; font-size: 24px; font-weight: 700; padding: 15px; line-height: 50px;}
+.b-title svg {width: 100px; height: auto; vertical-align: bottom;}
+.b-month {margin: 15px 0; color: #666; font-size: 14px;}
+.b-phase {margin: 0 0 4px 0; border-bottom: 3px solid #ed1c24; color: #ed1c24; font-size: 18px; font-weight: 700; padding: 7px;}
+.b-other, .b-other * {color: #999;}
+.b-principal, .b-principal * {color: #ed1c24;}
+.b-result {margin: 0 0 4px 0; border-top: 3px solid #ed1c24; color: #ed1c24; font-size: 18px; font-weight: 700; padding: 7px;}
+.b-milestone {margin: 0 0 3px 0; background: #ed1c24; color: #fff; font-size: 14px; font-weight: 700; padding: 7px;}
+
+.b-note {margin: 0 0 4px 0; background: #fff; padding: 0px; box-shadow: 0 1px 0 rgba(0,0,0,0.1); position: relative; transition: all ease-in-out 0.2s; cursor: pointer; position: relative;}
+.b-note:hover {transform: scale(1.2); z-index: 100; box-shadow: 0 10px 20px rgba(0,0,0,0.2)}
+.b-note:hover p {opacity: 1; pointer-events: all;}
+.b-note h4 {margin: 0; padding: 7px; background: #ddd; font-size: 14px; font-weight: 700;}
+.b-note p {padding: 0 7px 7px 7px; margin: -1px 0 0 0; font-size: 11px; color: #999; position: absolute; background: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.2); opacity: 0; transition: all ease-in-out 0.2s; pointer-events: none;}
+.b-note ul {margin: 0; padding: 7px; list-style-type: none; font-size: 11px;}
+.b-note ul li {display: inline-block; background: #f9f9f9; padding: 3px 5px; margin: 0 2px 2px 0; border-radius: 4px; box-shadow: 0 1px 0 rgba(0,0,0,0.1);}
+.b-note-highlight {background: #ffff99;}
+.b-note-highlight h4 {background: #ffff66;}
+.b-note-highlight li {background: #ffffcc;}
+.b-note-highlight p {background: #ffff99; color: #666;}
